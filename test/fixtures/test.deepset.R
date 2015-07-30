@@ -2,8 +2,8 @@ options( digits = 16 )
 library( jsonlite )
 
 
-r = 1
-p = 0.5
+r = 19
+p = 0.8
 probs = seq( 0, 1, 0.01 )
 y = qnbinom( probs, r, p )
 
