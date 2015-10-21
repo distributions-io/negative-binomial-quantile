@@ -2,16 +2,16 @@ Quantile Function
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][codecov-image]][codecov-url] [![Dependencies][dependencies-image]][dependencies-url]
 
-> [Negative Binomial](https://en.wikipedia.org/wiki/Negative Binomial_distribution) distribution [quantile function](https://en.wikipedia.org/wiki/Quantile_function).
+> [Negative binomial](https://en.wikipedia.org/wiki/Negative_binomial_distribution) distribution [quantile function](https://en.wikipedia.org/wiki/Quantile_function).
 
-The [quantile function](https://en.wikipedia.org/wiki/Quantile_function) for a [Negative Binomial](https://en.wikipedia.org/wiki/Negative Binomial_distribution) random variable returns for any `k` satisfying `0 <= k <= 1` the value `x` for which
+The [quantile function](https://en.wikipedia.org/wiki/Quantile_function) for a [negative binomial](https://en.wikipedia.org/wiki/Negative_binomial_distribution) random variable returns for any `k` satisfying `0 <= k <= 1` the value `x` for which
 
 <div class="equation" align="center" data-raw-text="F(x-1;r,p) < k \le F(x;r,p)" data-equation="eq:quantile_function">
-	<img src="https://cdn.rawgit.com/distributions-io/negbinomial-quantile/c36049dfb5e9d0d27e7223045dfaa691d568c17f/docs/img/eqn.svg" alt="Quantile function for a Negative Binomial distribution.">
+	<img src="https://cdn.rawgit.com/distributions-io/negbinomial-quantile/c36049dfb5e9d0d27e7223045dfaa691d568c17f/docs/img/eqn.svg" alt="Quantile function for a negative binomial distribution.">
 	<br>
 </div>
 
-holds, where `F` is the cumulative distribution function (CDF) of a Negative Binomial distribution with parameters `r` and `p`, where `r` is the number of failures until the experiment is stopped and `p` is the success probability.
+holds, where `F` is the cumulative distribution function (CDF) of a negative binomial distribution with parameters `r` and `p`, where `r` is the number of failures until the experiment is stopped and `p` is the success probability.
 
 ## Installation
 
@@ -25,12 +25,12 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 ## Usage
 
 ``` javascript
-var quantile = require( 'distributions-negbinomial-quantile' );
+var quantile = require( 'distributions-negative-binomial-quantile' );
 ```
 
 #### quantile( p[, options] )
 
-Evaluates the [quantile function](https://en.wikipedia.org/wiki/Quantile_function) for the [Negative Binomial](https://en.wikipedia.org/wiki/Negative Binomial_distribution) distribution. `p` may be either a [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) between `0` and `1`, an [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array), a [`typed array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays), or a [`matrix`](https://github.com/dstructs/matrix).
+Evaluates the [quantile function](https://en.wikipedia.org/wiki/Quantile_function) for the [negative binomial](https://en.wikipedia.org/wiki/Negative_binomial_distribution) distribution. `p` may be either a [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) between `0` and `1`, an [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array), a [`typed array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays), or a [`matrix`](https://github.com/dstructs/matrix).
 
 ``` javascript
 var matrix = require( 'dstructs-matrix' ),
@@ -79,7 +79,7 @@ The function accepts the following `options`:
 *	__path__: [deepget](https://github.com/kgryte/utils-deep-get)/[deepset](https://github.com/kgryte/utils-deep-set) key path.
 *	__sep__: [deepget](https://github.com/kgryte/utils-deep-get)/[deepset](https://github.com/kgryte/utils-deep-set) key path separator. Default: `'.'`.
 
-A [Negative Binomial](https://en.wikipedia.org/wiki/Negative Binomial_distribution) distribution is a function of 2 parameter(s): `r`(number of failures until experiment is stopped) and `p`(success probability). By default, `r` is equal to `1` and `p` is equal to `0.5`. To adjust either parameter, set the corresponding option(s).
+A [negative binomial](https://en.wikipedia.org/wiki/Negative_binomial_distribution) distribution is a function of two parameters: `r`(number of failures until experiment is stopped) and `0 < p < 1`(success probability). By default, `r` is equal to `1` and `p` is equal to `0.5`. To adjust either parameter, set the corresponding option.
 
 ``` javascript
 var x = [ 0, 0.2, 0.4, 0.6, 0.8, 1 ];
@@ -280,7 +280,7 @@ bool = ( mat === out );
 ## Examples
 
 ``` javascript
-var quantile = require( 'distributions-negbinomial-quantile' ),
+var quantile = require( 'distributions-negative-binomial-quantile' ),
 	matrix = require( 'dstructs-matrix' );
 
 var data,
