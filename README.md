@@ -16,7 +16,7 @@ holds, where `F` is the cumulative distribution function (CDF) of a negative bin
 ## Installation
 
 ``` bash
-$ npm install distributions-negbinomial-quantile
+$ npm install distributions-negative-binomial-quantile
 ```
 
 For use in the browser, use [browserify](https://github.com/substack/node-browserify).
@@ -383,20 +383,20 @@ $ make view-cov
 Copyright &copy; 2015. The [Compute.io](https://github.com/compute-io) Authors.
 
 
-[npm-image]: http://img.shields.io/npm/v/distributions-negbinomial-quantile.svg
-[npm-url]: https://npmjs.org/package/distributions-negbinomial-quantile
+[npm-image]: http://img.shields.io/npm/v/distributions-negative-binomial-quantile.svg
+[npm-url]: https://npmjs.org/package/distributions-negative-binomial-quantile
 
-[travis-image]: http://img.shields.io/travis/distributions-io/negbinomial-quantile/master.svg
-[travis-url]: https://travis-ci.org/distributions-io/negbinomial-quantile
+[travis-image]: http://img.shields.io/travis/distributions-io/negative-binomial-quantile/master.svg
+[travis-url]: https://travis-ci.org/distributions-io/negative-binomial-quantile
 
-[codecov-image]: https://img.shields.io/codecov/github/distributions-io/negbinomial-quantile/master.svg
-[codecov-url]: https://coveralls.io/github/distributions-io/negbinomial-quantile?branch=master
+[codecov-image]: https://img.shields.io/codecov/github/distributions-io/negative-binomial-quantile/master.svg
+[codecov-url]: https://coveralls.io/github/distributions-io/negative-binomial-quantile?branch=master
 
-[dependencies-image]: http://img.shields.io/david/distributions-io/negbinomial-quantile.svg
-[dependencies-url]: https://david-dm.org/distributions-io/negbinomial-quantile
+[dependencies-image]: http://img.shields.io/david/distributions-io/negative-binomial-quantile.svg
+[dependencies-url]: https://david-dm.org/distributions-io/negative-binomial-quantile
 
-[dev-dependencies-image]: http://img.shields.io/david/dev/distributions-io/negbinomial-quantile.svg
-[dev-dependencies-url]: https://david-dm.org/dev/distributions-io/negbinomial-quantile
+[dev-dependencies-image]: http://img.shields.io/david/dev/distributions-io/negative-binomial-quantile.svg
+[dev-dependencies-url]: https://david-dm.org/dev/distributions-io/negative-binomial-quantile
 
-[github-issues-image]: http://img.shields.io/github/issues/distributions-io/negbinomial-quantile.svg
-[github-issues-url]: https://github.com/distributions-io/negbinomial-quantile/issues
+[github-issues-image]: http://img.shields.io/github/issues/distributions-io/negative-binomial-quantile.svg
+[github-issues-url]: https://github.com/distributions-io/negative-binomial-quantile/issues

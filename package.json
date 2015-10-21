@@ -1,5 +1,5 @@
 {
-  "name": "distributions-negbinomial-quantile",
+  "name": "distributions-negative-binomial-quantile",
   "version": "0.0.0",
   "description": "Negative Binomial distribution quantile function.",
   "author": {
@@ -20,7 +20,7 @@
   "main": "./lib",
   "repository": {
     "type": "git",
-    "url": "git://github.com/compute-io/negbinomial-quantile.git"
+    "url": "git://github.com/compute-io/negative-binomial-quantile.git"
   },
   "keywords": [
     "distributions.io",
@@ -32,7 +32,7 @@
     "inverse"
   ],
   "bugs": {
-    "url": "https://github.com/compute-io/negbinomial-quantile/issues"
+    "url": "https://github.com/compute-io/negative-binomial-quantile/issues"
   },
   "dependencies": {
     "compute-array-constructors": "^1.0.0",
